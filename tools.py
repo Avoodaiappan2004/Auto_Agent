@@ -2,6 +2,7 @@ import os
 import smtplib
 
 import subprocess
+import shutil
 from email.mime.text import MIMEText
 
 def create_file(filename, content):
@@ -82,6 +83,9 @@ def push_to_github(project_folder, repo_name):
 
         # Move into project folder
         os.chdir(project_folder)
+        # before git init
+        if os.path.exists(f"{project_folder}/.git"):
+            shutil.rmtree(f"{project_folder}/.git")
 
         os.system("git init")
         os.system("git add .")

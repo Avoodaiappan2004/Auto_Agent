@@ -11,7 +11,7 @@ async function runAgent() {
     document.getElementById("githubLink").innerHTML = "";
 
     try {
-        const res = await fetch("http://127.0.0.1:5000/run", {
+        const res = await fetch("https://auto-agent-54cl.onrender.com/run", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
