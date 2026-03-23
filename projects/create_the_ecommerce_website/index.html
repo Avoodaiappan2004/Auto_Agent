@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="product-list">
+            <div class="product">
+                <img src="https://picsum.photos/200/300" alt="Product Image">
+                <h2>Product 1</h2>
+                <p>$20.00</p>
+                <button class="add-to-cart" data-id="1">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://picsum.photos/200/301" alt="Product Image">
+                <h2>Product 2</h2>
+                <p>$30.00</p>
+                <button class="add-to-cart" data-id="2">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://picsum.photos/200/302" alt="Product Image">
+                <h2>Product 3</h2>
+                <p>$40.00</p>
+                <button class="add-to-cart" data-id="3">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+    <div class="cart">
+        <h2>Cart</h2>
+        <ul id="cart-list">
+            <!-- cart items will be listed here -->
+        </ul>
+        <p id="total-price"></p>
+        <button id="checkout">Checkout</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

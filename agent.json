@@ -1,0 +1,52 @@
+{
+  "agent_name": "AutoDevAgent",
+
+  "operator": {
+    "wallet": "0xABC123XYZ"
+  },
+
+  "identity": {
+    "erc8004_identity": "erc8004-agent-001",
+    "registration_tx": "0xFAKEHASH",
+    "network": "testnet"
+  },
+
+  "capabilities": {
+    "task_categories": [
+      "web-app-generation",
+      "automation",
+      "email-sending",
+      "github-deployment"
+    ],
+
+    "supported_tools": [
+      "groq-api",
+      "file-system",
+      "smtp-email",
+      "github-api"
+    ],
+
+    "tech_stack": [
+      "python",
+      "html",
+      "css",
+      "javascript"
+    ]
+  },
+
+  "constraints": {
+    "compute_budget": "10 API calls per task",
+    "max_retries": 3,
+    "safety_rules": [
+      "block destructive commands",
+      "validate outputs before execution",
+      "abort unsafe operations"
+    ]
+  },
+
+  "autonomy": {
+    "loop": ["discover", "plan", "execute", "verify", "submit"],
+    "self_correction": true,
+    "human_intervention": "minimal"
+  }
+}
