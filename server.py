@@ -6,6 +6,9 @@ import os
 
 app = Flask(__name__)
 CORS(app)
+@app.route("/")
+def home():
+    return "Auto Agent Backend is Running 🚀"
 
 @app.route("/run", methods=["POST"])
 def run():
