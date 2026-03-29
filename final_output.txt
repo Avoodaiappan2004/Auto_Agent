@@ -1,1 +1,1 @@
-Task 'create a profossional portfolio webname name jaishree doing mca at francis xavier college with cgpa 9.5 include skills c python java htlm css  ,include home skill and contact pages' completed
+Task 'create the prime number checker app and push to github' completed
